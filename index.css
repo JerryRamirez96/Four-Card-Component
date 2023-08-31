@@ -1,0 +1,157 @@
+:root {
+  --Red-primary: hsl(0, 78%, 62%);
+  --Cyan-primary: hsl(180, 62%, 55%);
+  --Orange-primary: hsl(34, 97%, 64%);
+  --Blue-primary: hsl(212, 86%, 64%);
+  --Very-Dark-Blue-neutral: hsl(234, 12%, 34%);
+  --Grayish-Blue-neutral: hsl(229, 6%, 66%);
+  --Very-Light-Gray-neutral: hsl(0, 0%, 98%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray-neutral);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5.6rem 2.56rem 0 2.56rem;
+  text-align: center;
+}
+
+.container-header h1 {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--Very-Dark-Blue-neutral);
+}
+
+.container-header h1 span {
+  font-weight: 600;
+  display: block;
+}
+
+.container-header p {
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue-neutral);
+  margin-bottom: 5rem;
+  width: 18.4rem;
+}
+
+h1 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: 2.3rem;
+}
+
+img {
+  margin-left: 12.3rem;
+}
+
+.cyan-card {
+  width: 19.5rem;
+  height: 13.9rem;
+  background-color: white;
+  border-radius: 10px;
+  border-top: 4px solid var(--Cyan-primary);
+  box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -webkit-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -moz-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  padding-top: 1.8rem;
+  padding-left: 1.9rem;
+  padding-right: 1.75rem;
+  text-align: left;
+  margin-bottom: 1.56rem;
+}
+
+.red-card {
+  width: 19.5rem;
+  height: 13.9rem;
+  background-color: white;
+  border-radius: 10px;
+  border-top: 4px solid var(--Red-primary);
+  box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -webkit-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -moz-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  padding-top: 1.8rem;
+  padding-left: 1.9rem;
+  padding-right: 1.75rem;
+  text-align: left;
+  margin-bottom: 1.56rem;
+}
+
+.orange-card {
+  width: 19.5rem;
+  height: 13.9rem;
+  background-color: white;
+  border-radius: 10px;
+  border-top: 4px solid var(--Orange-primary);
+  box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -webkit-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -moz-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  padding-top: 1.8rem;
+  padding-left: 1.9rem;
+  padding-right: 1.75rem;
+  text-align: left;
+  margin-bottom: 1.56rem;
+}
+
+.blue-card {
+  width: 19.5rem;
+  height: 13.9rem;
+  background-color: white;
+  border-radius: 10px;
+  border-top: 4px solid var(--Blue-primary);
+  box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -webkit-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  -moz-box-shadow: -8px 14px 29px -1px rgba(219, 207, 207, 0.9);
+  padding-top: 1.8rem;
+  padding-left: 1.9rem;
+  padding-right: 1.75rem;
+  text-align: left;
+  margin-bottom: 1.56rem;
+}
+
+/* screen with a min-width of 1440px. 1440px and greater do this (desktop) */
+@media (min-width: 769px) {
+  .container-header p {
+    text-align: center;
+    width: 27rem;
+  }
+
+  .container-header h1 {
+    width: 27.5rem;
+    font-size: 1.6rem;
+  }
+
+  .container-header h1 span {
+    width: 27.5rem;
+    font-size: 1.6rem;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .desktop-col-card {
+    margin-right: 1.56rem;
+    margin-left: 1.56rem;
+  }
+}
